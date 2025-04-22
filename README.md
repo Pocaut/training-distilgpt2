@@ -15,7 +15,7 @@ Oi, se você está lendo isso, obrigado por visitar meu projeto.
 
 Hoje tive a brilhante ideia de treinar um modelo LLM usando a conversa de um grupo que tenho com amigos próximos. Tinha cerca de 89.000 mensagens úteis, levei metade de um dia de preparação e depois 6 horas de treinamento. Fiquei acordado até por volta da 1h da manhã para ver se funcionaria depois de treinar o modelo e, para surpresa de ninguém, ele é completamente incoerente. Uma experiência bem divertida. Estou postando o código aqui para que outros vejam e usem.
 
-Se você usar meu codigo, isntale Python e execute os comandos a seguir no CMD:
+Se você usar meu codigo, instale Python e execute os comandos a seguir no CMD:
 
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
