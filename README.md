@@ -6,6 +6,7 @@ Today i had the brilliant idea of training an LLM model using the logs of a grou
 If you plan on using my code, make sure to install Python and run the following commands on CMD:
 
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
 pip install transformers discord.py accelerate
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -17,4 +18,5 @@ Hoje tive a brilhante ideia de treinar um modelo LLM usando a conversa de um gru
 Se você usar meu codigo, isntale Python e execute os comandos a seguir no CMD:
 
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
 pip install transformers discord.py accelerate
