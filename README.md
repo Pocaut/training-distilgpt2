@@ -1,22 +1,70 @@
-# training-distilgpt2
-Hi, if you're reading this, thank you for visiting my project.
+Project Overview
 
-Today i had the brilliant idea of training an LLM model using the logs of a groupchat i have with close friends. Had about 89.000 useful messages, took me half a day to set it up, then 6 hours to train, i stayed awake till about 1AM to see if it would work after training the model and to no one's surprise its completely incoherent. Pretty fun experience. Uploading the code here for others to see and use.
+This application is designed to train and use a language model based on GPT-2 using the Hugging Face transformers library. It can be integrated with a Discord bot for interactive use.
+ Features
 
-If you plan on using my code, make sure to install Python and run the following commands on CMD:
+    Load and use a pre-trained GPT-2 model.
 
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    Optionally fine-tune the model with custom text data.
 
-pip install transformers discord.py accelerate
+    Interact with the model through a Discord bot.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Dependencies
 
-Oi, se você está lendo isso, obrigado por visitar meu projeto.
+Make sure to install the following Python libraries:
 
-Hoje tive a brilhante ideia de treinar um modelo LLM usando a conversa de um grupo que tenho com amigos próximos. Tinha cerca de 89.000 mensagens úteis, levei metade de um dia de preparação e depois 6 horas de treinamento. Fiquei acordado até por volta da 1h da manhã para ver se funcionaria depois de treinar o modelo e, para surpresa de ninguém, ele é completamente incoerente. Uma experiência bem divertida. Estou postando o código aqui para que outros vejam e usem.
+pip install torch transformers discord.py
 
-Se você usar meu codigo, instale Python e execute os comandos a seguir no CMD:
+Fine-tune the model:
 
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    python train.py
 
-pip install transformers discord.py accelerate
+----
+
+ Visão Geral do Projeto
+
+Esta aplicação é feita para treinar e usar um modelo de linguagem baseado no GPT-2 usando a biblioteca transformers da Hugging Face. Pode ser integrada a um bot do Discord para uso interativo.
+ Funcionalidades
+
+    Carrega e utiliza um modelo GPT-2 pré-treinado.
+
+    Opcionalmente realiza fine-tuning com dados personalizados.
+
+    Permite interação com o modelo via bot do Discord.
+
+ Dependências
+
+Certifique-se de instalar as seguintes bibliotecas Python:
+
+pip install torch transformers discord.py
+
+ Arquivos
+
+    model.py: Carrega e executa o modelo GPT-2.
+
+    bot.py: Conecta o modelo ao Discord para funcionalidade de chatbot.
+
+    train.py: (Opcional) Script para treinar/ajustar o modelo.
+
+    data/: Diretório com dados de treinamento em formato JSON ou texto.
+
+▶ Como Executar
+
+    Clone o repositório:
+
+git clone https://github.com/seu-usuario/seu-repo.git
+cd seu-repo
+
+Execute o bot:
+
+    Defina o token do seu bot Discord como uma variável de ambiente:
+
+export DISCORD_TOKEN=seu_token_aqui  # ou use dotenv
+
+Depois inicie o bot:
+
+    python bot.py
+
+Treine o modelo:
+
+python train.py
