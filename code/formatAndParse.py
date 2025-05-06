@@ -9,7 +9,7 @@ def limpar_chat_whatsapp(arquivo_entrada, arquivo_saida):
 
 
 
-    # Added the <Mensagem Editada> after i trained the model, will fix later.
+   
     palavras_sistema = [
         "adicionou", "removeu", "saiu", "mudou o assunto",
         "mudou o nome", "criou o grupo", "alterou as configurações",
