@@ -49,12 +49,12 @@ def limpar_chat_whatsapp(arquivo_entrada, arquivo_saida):
     with open(arquivo_saida, 'w', encoding='utf-8') as saida:
         json.dump(mensagens, saida, indent=2, ensure_ascii=False)
 
-    print(f"✅ Chat limpo salvo em: {arquivo_saida}")
+    print(f" Chat limpo salvo em: {arquivo_saida}")
 
 if __name__ == "__main__":
     try:
         limpar_chat_whatsapp("YOUR_DATASET_INPUT", "YOUR_DESIRED_OUTPUT_PATH")
     except Exception as e:
-        print(f"❌ Ocorreu um erro: {e}")
+        print(f" Ocorreu um erro: {e}")
 
     input("\nPressione Enter para sair...")
