@@ -5,7 +5,7 @@ This application is designed to train and use a language model based on GPT-2 us
 
     Load and use a pre-trained GPT-2 model.
 
-    Optionally fine-tune the model with custom text data.
+    Fine-tune the model with custom text data.
 
     Interact with the model through a Discord bot.
 
@@ -14,6 +14,7 @@ This application is designed to train and use a language model based on GPT-2 us
 Make sure to install the following Python libraries:
 
 pip install torch transformers discord.py
+
 
 Fine-tune the model:
 
@@ -28,7 +29,7 @@ Esta aplicação é feita para treinar e usar um modelo de linguagem baseado no 
 
     Carrega e utiliza um modelo GPT-2 pré-treinado.
 
-    Opcionalmente realiza fine-tuning com dados personalizados.
+    Realiza fine-tuning com dados personalizados.
 
     Permite interação com o modelo via bot do Discord.
 
@@ -38,33 +39,7 @@ Certifique-se de instalar as seguintes bibliotecas Python:
 
 pip install torch transformers discord.py
 
- Arquivos
-
-    model.py: Carrega e executa o modelo GPT-2.
-
-    bot.py: Conecta o modelo ao Discord para funcionalidade de chatbot.
-
-    train.py: (Opcional) Script para treinar/ajustar o modelo.
-
-    data/: Diretório com dados de treinamento em formato JSON ou texto.
-
-▶ Como Executar
-
-    Clone o repositório:
-
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-
-Execute o bot:
-
-    Defina o token do seu bot Discord como uma variável de ambiente:
-
-export DISCORD_TOKEN=seu_token_aqui  # ou use dotenv
-
-Depois inicie o bot:
-
-    python bot.py
 
 Treine o modelo:
 
-python train.py
+    python train.py
